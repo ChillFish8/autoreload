@@ -5,6 +5,8 @@ autoreload is a CLI based auto-reloading browser tool, built with selenium and w
 ![Demo](https://i.imgur.com/NSh3CPp.gif)
 
 # Usage
+You can install via doing `pip install autoreload`
+
 ```
 Usage: python -m autoreload [OPTIONS]
 
