@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='autoloader',
+    name='autoreload',
     version='1.0',
     description='Auto reloading web browser.',
     author='ChillFish8',
