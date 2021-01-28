@@ -8,8 +8,8 @@ setup(
     description='Watch your code live reload in the browser',
     author='CF8',
     author_email='hburt2003@gmail.com',
-    url='https://github.com/ChillFish8/autoloader',
-    download_url='https://github.com/ChillFish8/autoloader/archive/0.1.0.tar.gz',
+    url='https://github.com/ChillFish8/autoreload',
+    download_url='https://github.com/ChillFish8/autoreload/archive/0.1.0.tar.gz',
     keywords=['live', 'auto', 'reloading', 'web development', 'web'],
     install_requires=[
         'selenium',
