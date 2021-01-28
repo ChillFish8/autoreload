@@ -1,8 +1,8 @@
 from typing import Union
 from selenium import webdriver
 
-from autoloader.config import Config, DriverFlavour
-from autoloader.path import RenderPath
+from .config import Config, DriverFlavour
+from .path import RenderPath
 
 
 class RefreshableDriver:

@@ -5,9 +5,9 @@ import click
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
-from autoloader.path import RenderPath
-from autoloader.render import RefreshableDriver
-from autoloader.config import Config, DriverFlavour
+from .path import RenderPath
+from .render import RefreshableDriver
+from .config import Config, DriverFlavour
 
 
 @click.command()
