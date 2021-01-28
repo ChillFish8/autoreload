@@ -2,6 +2,9 @@
 
 Auto loader is a CLI based auto-reloading browser tool, built with selenium and watchdog. autoloader will automatically reload the given url when ever any of the targeted directories or files change giving you a live reloading web page.
 
+![Demo](https://i.imgur.com/NSh3CPp.gif)
+
+# Usage
 ```
 Usage: python -m autoloader [OPTIONS]
 
