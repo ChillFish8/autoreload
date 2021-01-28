@@ -19,5 +19,4 @@ class RenderPath:
     def to_url(self) -> str:
         if self.url is not None:
             return self.url
-
-        return str(self.fp.resolve())
+        return str(self.fp.absolute())
