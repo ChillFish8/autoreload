@@ -14,9 +14,11 @@ class RenderPath:
             return cls(url=path)
         else:
             p = pathlib.Path(path)
+            if not p.exists():
+                raise ValueError("This file does not exist!")
             return cls(fp=p)
 
     def to_url(self) -> str:
         if self.url is not None:
             return self.url
-        return str(self.fp.absolute())
+        return str(self.fp.resolve())
