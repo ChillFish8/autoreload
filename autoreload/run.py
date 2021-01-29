@@ -105,8 +105,12 @@ class EventHandle(PatternMatchingEventHandler):
             case_sensitive=False,
         )
         self.driver = driver
+        self.triggered_at = time.time()
 
     def on_modified(self, event):
+        if self.triggered_at + 2 > time.time():
+            return
+
         self.driver.reload()
 
 
