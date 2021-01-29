@@ -112,6 +112,7 @@ class EventHandle(PatternMatchingEventHandler):
             return
 
         self.driver.reload()
+        self.triggered_at = time.time()
 
 
 if __name__ == '__main__':
