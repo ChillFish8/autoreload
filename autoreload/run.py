@@ -24,6 +24,11 @@ from .config import Config, DriverFlavour
          "paths.",
 )
 @click.option(
+    '--dir',
+    default=".",
+    help="The directory to start looking for changes.",
+)
+@click.option(
     '--ignore',
     default="",
     help="The files to ignore when a change is detected. use `;` to separate "
@@ -49,6 +54,7 @@ from .config import Config, DriverFlavour
 def run(
     url: str,
     targets: str,
+    dir: str,
     ignore: str,
     driver: str,
     execpath: str,
@@ -78,7 +84,7 @@ def run(
     )
 
     observer = Observer()
-    observer.schedule(handler, ".", recursive=True)
+    observer.schedule(handler, dir, recursive=True)
     observer.start()
 
     try:
